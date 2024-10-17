@@ -1,6 +1,6 @@
 ---
   - name: ilovevim
-    host: linux
+    hosts: linux
     tasks:
       - name: ensure vim is there
         apt:
