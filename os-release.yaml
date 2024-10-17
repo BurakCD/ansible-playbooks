@@ -1,0 +1,9 @@
+---
+    - name: Get OS release information
+      hosts: all
+      gather_facts: yes
+    
+      tasks:
+        - name: Print OS release information
+          debug:
+            msg: "{{ ansible_os_family }}, {{ ansible_distribution }}, {{ ansible_distribution_version }}"
